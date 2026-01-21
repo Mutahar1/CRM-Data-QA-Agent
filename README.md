@@ -34,11 +34,11 @@ This makes timely, flexible data exploration difficult for non-technical stakeho
 
 CRM Data Q&A Agent bridges the gap between business users and data by:
 
-- 🧠 **Natural Language Interfaces:** Users ask questions in plain English.  
-- 📊 **Automated NL2SQL:** The agent generates SQL queries against a replicated BigQuery dataset of Salesforce data.  
-- 📈 **Dynamic Insights & Visuals:** Results can be returned as data tables or Vega-Lite charts, giving immediate insights.  
-- 🔁 **Multi-Agent RAG Workflow:** Uses an advanced retrieval-augmented generation pipeline with context and multi-agent orchestration.  
-- 🧰 **Build on ADK:** It’s built with the Agent Development Kit (ADK), a modular framework for AI agents. :contentReference[oaicite:2]{index=2}
+- **Natural Language Interfaces:** Users ask questions in plain English.  
+- **Automated NL2SQL:** The agent generates SQL queries against a replicated BigQuery dataset of Salesforce data.  
+- **Dynamic Insights & Visuals:** Results can be returned as data tables or Vega-Lite charts, giving immediate insights.  
+- **Multi-Agent RAG Workflow:** Uses an advanced retrieval-augmented generation pipeline with context and multi-agent orchestration.  
+- **Build on ADK:** It’s built with the Agent Development Kit (ADK), a modular framework for AI agents. :contentReference[oaicite:2]{index=2}
 
 ---
 
@@ -60,12 +60,17 @@ CRM Data Q&A Agent integrates several modern components and architectural layers
 
 - **Data Source:** Salesforce data replicated to Google BigQuery.  
 - **AI Workflow:** Retrieval-Augmented Generation (RAG) with long-context handling using Gemini 2.5 Pro.
-![image alt](https://github.com/Mutahar1/salesforce-solution-architect-playbook/blob/3f0019f961a7cb6be447a971cc933537f3a32313/screenshots/flows/record-triggered-flow.png%20(10).png)
+![image alt](https://github.com/Mutahar1/CRM-Data-QA-Agent/blob/25a0ed444500ce4f76fc7df543ab299ced083045/screenshot-dark.png)
 
 - **NL2SQL Engine:** Translates natural language questions into precise SQL queries.  
-- **Analytics Layer:** Executes SQL against BigQuery and returns structured results.  
-- **Visualization:** Optional Vega-Lite chart generation for graphs and dashboards.  
+- **Analytics Layer:** Executes SQL against BigQuery and returns structured results.
+  ![image alt](https://github.com/Mutahar1/CRM-Data-QA-Agent/blob/25a0ed444500ce4f76fc7df543ab299ced083045/data_agent_design.jpg)
+
+- **Visualization:** Optional Vega-Lite chart generation for graphs and dashboards.
+
 - **Agent Development Kit (ADK):** Provides the modular framework for agents, session services, and event streaming. :contentReference[oaicite:3]{index=3}
+  
+  ![image alt](https://github.com/Mutahar1/CRM-Data-QA-Agent/blob/25a0ed444500ce4f76fc7df543ab299ced083045/top_5_customers.jpg)
 
 ---
 
